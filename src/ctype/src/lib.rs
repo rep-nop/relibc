@@ -4,10 +4,7 @@
 
 extern crate platform;
 
-mod wctype;
-
 use platform::types::*;
-pub use wctype::*;
 
 #[no_mangle]
 pub extern "C" fn isalnum(c: c_int) -> c_int {
